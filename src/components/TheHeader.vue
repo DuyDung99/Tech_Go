@@ -29,7 +29,7 @@
         <div class="header-right">
           <div class="header-right-address">
             <button class="header-right-address-btn">
-              <span style="position: absolute; top: 15%; left: 8px;">
+              <span style="position: absolute; top: 15%; left: 8.5%;">
                 <!-- <i class="fa-sharp fa-solid fa-map-pin"></i> -->
                 <i class="fa-solid fa-map-pin"></i>
               </span>
@@ -796,6 +796,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .content-center-ul {

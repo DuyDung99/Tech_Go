@@ -364,8 +364,8 @@ export default {
 }
 
 .home-baner-right {
-  height: 425px;
-  width: 25%;
+  /* height: 425px; */
+  width: 26%;
   margin-right: 12px;
 }
 
