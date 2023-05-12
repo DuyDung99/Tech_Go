@@ -201,7 +201,6 @@ export const useProductsStore = defineStore('products', {
         if (res.status === 200) {
           this.image_path = res.data
           cb(data, res.data)
-
         }
       } catch (error) {
         console.log(error);

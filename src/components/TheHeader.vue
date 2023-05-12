@@ -625,7 +625,7 @@ a {
 }
 
 .user-span {
-  margin-left: 16px;
+  margin-left: 32px;
 }
 
 .text-user {
@@ -844,5 +844,9 @@ a {
   position: fixed;
   width: 100%;
   z-index: 2;
+}
+
+.header-right-span {
+  text-align: start;
 }
 </style>
