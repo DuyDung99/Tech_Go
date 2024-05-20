@@ -192,7 +192,7 @@ export default {
         "https://theme.hstatic.net/200000516791/1000880762/14/categorybanner_4_img.jpg?v=2257",
       ],
       model: null,
-      countDownToTime: new Date("Apr 22, 2023 00:00:00").getTime(),
+      countDownToTime: new Date("May 30, 2023 00:00:00").getTime(),
       timeDays: null,
       timesHours: null,
       minutes: null,
@@ -263,10 +263,12 @@ export default {
 
   async created() {
     try {
+      // lấy tất cả sản phẩm
       this.params.skip = this.pageProduct
       this.params.limit = this.sizeProduct
       await this.getProducts(this.params)
 
+      // lấy ra tất cả các mặt hàng
       this.params.skip = this.pageCategory
       this.params.limit = this.sizeCategory
       await this.getCategorys(this.params)
@@ -364,8 +366,8 @@ export default {
 }
 
 .home-baner-right {
-  height: 425px;
-  width: 25%;
+  /* height: 425px; */
+  width: 26%;
   margin-right: 12px;
 }
 

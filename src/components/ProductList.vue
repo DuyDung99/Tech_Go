@@ -152,7 +152,7 @@ export default {
             page: 1,
             size: 10,
             menuBrand: '',
-            range: [0, 50000000],
+            range: [0, '50.000.000đ'],
             items: [
                 { title: 'Sản phẩm nổi bật' },
                 { title: 'Giá Tăng Dần' },

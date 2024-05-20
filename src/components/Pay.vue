@@ -164,9 +164,19 @@ export default {
                     };
                     this.valOder.push(newItem);
                 }
-                let oders = this.valOder
-                await this.addOder(oders)
-                this.isShowPay = true
+                if (this.valOder.length === 0) {
+                    alert('giỏ hàng trống')
+                    // const today = new Date(); // Tạo một đối tượng Date mới
+                    // const day = today.getDate(); // Lấy ngày
+                    // const month = today.getMonth() + 1; // Lấy tháng (tháng bắt đầu từ 0 nên phải cộng thêm 1)
+                    // const year = today.getFullYear(); // Lấy năm
+                    // console.log('date', `${day} - ${month} - ${year}`); // In ra ngày tháng năm hiện tại
+                    // console.log('today', today.toLocaleTimeString('en-US'));
+                } else {
+                    await this.addOder(this.valOder)
+                    this.isShowPay = true
+                }
+
             } catch (error) {
                 console.log(error);
             }

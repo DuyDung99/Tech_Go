@@ -4,7 +4,7 @@
             <div class="admin-box admin-left">
                 <div class="techgo-header">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <span>TechGo Shop</span>
+                    <span @click="onlClickHome()">TechGo Shop</span>
                 </div>
                 <ul class="menu-list">
                     <li @click="selected = 'UserManagement'" :class="[selected == 'UserManagement' ? 'color-grenn' : '']">
@@ -19,6 +19,10 @@
                     <li @click="selected = 'OderManagement'" :class="[selected == 'OderManagement' ? 'color-grenn' : '']">
                         <i class="fa-solid fa-cart-plus"></i>
                         <span>Oder Management</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars"></i>
+                        <span> Category Management</span>
                     </li>
                 </ul>
             </div>
@@ -86,6 +90,10 @@ export default {
             }
             console.log('event: ', event.target.value);
         },
+
+        onlClickHome() {
+            this.$router.push({ path: '/' })
+        }
     },
     computed: {
         ...mapState(useProductsStore, [

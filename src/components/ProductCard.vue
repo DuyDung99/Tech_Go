@@ -72,11 +72,6 @@
                                                     v-for="(items, i) in detailProduct.product_variants" :key="i"
                                                     @click="clickColor(i)">
                                                 </p>
-                                                <!-- <p class="product-color-gray"></p>
-                                                <p class="product-color-black"></p>
-                                                <p class="product-color-Gold"></p>
-                                                <p class="product-color-moss_green"></p>
-                                                <p class="product-color-violet"></p> -->
                                             </div>
                                             <div class="product-number">
                                                 <p style="width:25%">Số Lượng:</p>
@@ -92,8 +87,8 @@
                                                 </a>
                                             </div>
                                             <div class="detail">
-                                                <p @click="handleClickProductDetailView(id)">Xem chi tiết sản phẩm <i
-                                                        class="fa-solid fa-angles-right"></i></p>
+                                                <a :href="`/san-pham/${id}`">Xem chi tiết sản
+                                                    phẩm <i class="fa-solid fa-angles-right"></i></a>
                                             </div>
                                             <div class="product-item-i">
                                                 <span>Chia sẻ: </span>
@@ -765,8 +760,9 @@ export default {
     cursor: pointer;
 }
 
-.detail p {
+.detail a {
     color: #e67e22;
+    text-decoration: none;
 }
 
 :deep(.v-img__img--cover) {

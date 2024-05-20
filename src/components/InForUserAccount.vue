@@ -204,11 +204,10 @@ export default {
             console.log('item', item);
         }
     },
-    computed: {
-
-    },
-
     created() {
+        if (this.userData) {
+            this.dataUpdateUser = this.userData
+        }
         console.log('created', this.allOders);
     }
 }

@@ -139,7 +139,6 @@ export default {
                     return
                 }
                 await this.uploadImage(this.uploadImg, { ...this.productVariant }, cb)
-                this.productVariant.images.splice(0, 1, { image_path: this.image_path })
                 await this.updateProductVariant(this.id, this.productVariant.id, this.productVariant)
                 await this.getProductVariants(this.id)
                 this.$emit('handaleClose')
