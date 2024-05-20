@@ -4,7 +4,7 @@
       <div class="header">
         <div class="header-left">
           <router-link to="/">
-            <h3>TechGo Shop</h3>
+            <h3>TechGo Shop 1</h3>
           </router-link>
         </div>
         <!-- ---------------------------search------------------------------------- -->
@@ -128,7 +128,7 @@
                 </li>
               </ul>
               <li class="show-more-less" @click="simple_toggle(default_limit, items.length)">{{
-                limit_by === 9 ? '+ Hiện Thêm' : '- Ẩn Bớt' }}</li>
+            limit_by === 9 ? '+ Hiện Thêm' : '- Ẩn Bớt' }}</li>
             </ul>
           </div>
           <!-- -------------------------ListTechgo--------------------------------------- -->
@@ -339,7 +339,6 @@ export default {
       'allCart',
       'count'
     ]),
-
   },
 
   async created() {
@@ -351,8 +350,9 @@ export default {
       if (isLoggedIn && userData) {
         await this.getCarts()
       }
-
-      await this.getCategorys()
+      // this.params.skip = 0
+      // this.params.limit = 20
+      // await this.getCategorys()///????
 
     } catch (error) {
       console.log(error);

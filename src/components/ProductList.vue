@@ -1,6 +1,6 @@
 <template>
     <div class="list-products">
-        <!---------------lits product header----------------------------------------------------->
+        <!-- // -------------lits product header--------------------------------------------------- -->
         <div class="list-product-content">
             <div>
                 <div class="list-product-content-box">
