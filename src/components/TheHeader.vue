@@ -4,7 +4,7 @@
       <div class="header">
         <div class="header-left">
           <router-link to="/">
-            <h3>TechGo Shop 1</h3>
+            <h3>TechGo Shop</h3>
           </router-link>
         </div>
         <!-- ---------------------------search------------------------------------- -->
@@ -350,9 +350,9 @@ export default {
       if (isLoggedIn && userData) {
         await this.getCarts()
       }
-      // this.params.skip = 0
-      // this.params.limit = 20
-      // await this.getCategorys()///????
+      this.params.skip = 0
+      this.params.limit = 20
+      await this.getCategorys(this.params)
 
     } catch (error) {
       console.log(error);
