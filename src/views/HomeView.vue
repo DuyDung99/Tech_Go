@@ -5,7 +5,8 @@
       <div class="baner-up">
         <div class="home-baner-left">
           <div class="baner-img">
-            <HomeBannerImageVue v-for="(url, i) in bannerUrlsLeft" :key="i" :url="url" @click="navigationListProducts()">
+            <HomeBannerImageVue v-for="(url, i) in bannerUrlsLeft" :key="i" :url="url"
+              @click="navigationListProducts()">
             </HomeBannerImageVue>
           </div>
         </div>
@@ -28,7 +29,8 @@
       <!-- ---------------------------baner down------------------------------------ -->
       <div class="baner-bottom">
         <div class="baner-bottom-img">
-          <HomeBannerImageVue v-for="(url, i) in bannerUrlsBottom" :key="i" :url="url" @click="navigationListProducts()">
+          <HomeBannerImageVue v-for="(url, i) in bannerUrlsBottom" :key="i" :url="url"
+            @click="navigationListProducts()">
           </HomeBannerImageVue>
         </div>
       </div>
@@ -50,7 +52,8 @@
             <div class="slide-group ">
               <v-sheet class="mx-auto" elevation="8" max-width="100%">
                 <v-slide-group v-model="model" class="pa-4" center-active show-arrows>
-                  <v-slide-group-item v-for="(products, i) in topSellerProducts" :key="i" v-slot="{ isSelected, toggle }">
+                  <v-slide-group-item v-for="(products, i) in topSellerProducts" :key="i"
+                    v-slot="{ isSelected, toggle }">
                     <v-card class="ma-4" width="218">
                       <ProductCardVue :url="products.product_variants[0]?.images[0].image_path" :name="products.name"
                         :brand="products.brand.name" :price="products.product_variants[0]?.price" :id="products.id">
@@ -99,7 +102,8 @@
             <div class="slide-group slide-group-sale">
               <v-sheet class="mx-auto" elevation="8" max-width="100%">
                 <v-slide-group v-model="model" class="pa-4" center-active show-arrows>
-                  <v-slide-group-item v-for="(products, i) in topSellerProducts" :key="i" v-slot="{ isSelected, toggle }">
+                  <v-slide-group-item v-for="(products, i) in topSellerProducts" :key="i"
+                    v-slot="{ isSelected, toggle }">
                     <v-card class="ma-4" width="218">
                       <ProductCardVue :url="products.product_variants[0]?.images[0].image_path" :name="products.name"
                         :brand="products.brand.name" :price="products.product_variants[0]?.price" :id="products.id">
@@ -192,7 +196,7 @@ export default {
         "https://theme.hstatic.net/200000516791/1000880762/14/categorybanner_4_img.jpg?v=2257",
       ],
       model: null,
-      countDownToTime: new Date("May 30, 2023 00:00:00").getTime(),
+      countDownToTime: new Date("May 30, 2024 00:00:00").getTime(),
       timeDays: null,
       timesHours: null,
       minutes: null,
